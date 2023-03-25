@@ -1,4 +1,6 @@
 # CalTrain (**Synchronization and Mutual Exclusion**)
+![caltrain](https://user-images.githubusercontent.com/96186143/227682151-317e021a-b8b0-4f5d-9947-b15291857c0b.jpg)
+
 ## 1. Objectives
 
 * To get familiar with concurrent programming.
