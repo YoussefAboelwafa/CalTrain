@@ -1,3 +1,4 @@
+![caltrain](https://user-images.githubusercontent.com/96186143/227689237-b62168b1-dd98-4c61-901b-c35dec41b42d.jpg)
 # Description
 
 CalTrain (the train running in California, USA) has decided to improve its efficiency by automating not just its trains but also its passengers. From now on, passengers will be robots. Each robot and each train is controlled by a thread. You have been hired to write synchronization functions that will guarantee orderly loading of trains. You must define a structure struct station, plus several functions described below.
