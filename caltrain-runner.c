@@ -195,7 +195,7 @@ int main()
 
 	if (total_passengers_boarded == total_passengers)
 	{
-		printf("Looks good!\n");
+		printf("Looks good ✅\n");
 		return 0;
 	}
 	else

@@ -2,16 +2,15 @@
 
 struct station
 {
-	// mutex
 	pthread_mutex_t mutex;
 
-	// condition variables
-	pthread_cond_t train_arrived;
-	pthread_cond_t passenger_seated;
+	pthread_cond_t arrival;
+	pthread_cond_t leaving;
 
-	int onboarding_passengers;
-	int waiting_passengers;
-	int empty_seats;
+	int available_seats;
+	int capacity;
+	int passengers_on_train;
+	int passengers_on_station;
 };
 
 void station_init(struct station *station);
