@@ -8,3 +8,10 @@ CalTrain (the train running in California, USA) has decided to improve its effic
 2. When a passenger robot arrives in a station, it first invokes the function: **station_wait_for_train(struct station * station)** This function must not return until a train is in the station (i.e., a call to station load train is in progress) and there are enough free seats on the train for this passenger to sit down. Once this function returns, the passenger robot will move the passenger on board the train and into a seat (you do not need to worry about how this mechanism works).
 
 3. Once the passenger is seated, it will call the function: **station_on_board(struct station * station)** to let the train know that it’s on board.
+
+### To run the program:
+```
+Open the terminal and go to project path 
+Write the command "make" to compile the project files   
+Write the command "./caltrain" to run the project with a random test
+```
