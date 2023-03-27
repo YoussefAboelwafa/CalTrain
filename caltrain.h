@@ -1,7 +1,17 @@
 #include <pthread.h>
 
-struct station {
-	// FILL ME IN
+struct station
+{
+	// mutex
+	pthread_mutex_t mutex;
+
+	// condition variables
+	pthread_cond_t train_arrived;
+	pthread_cond_t passenger_seated;
+
+	int onboarding_passengers;
+	int waiting_passengers;
+	int empty_seats;
 };
 
 void station_init(struct station *station);
