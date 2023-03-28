@@ -1,4 +1,4 @@
-Synchronization and Mutual Exclusion
+# Synchronization and Mutual Exclusion
 ![caltrain](https://user-images.githubusercontent.com/96186143/227689237-b62168b1-dd98-4c61-901b-c35dec41b42d.jpg)
 ## Description
 
