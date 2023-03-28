@@ -21,7 +21,8 @@ void station_load_train(struct station *station, int count)
 	if(station->capacity==0 || !station->passengers_on_station){
 		return;
 	}
-
+	
+	pthread_mutex_lock(&station->mutex);
 	station->available_seats = count;
 
 	// wake up all passengers waiting for the train when train arrive
@@ -36,6 +37,8 @@ void station_load_train(struct station *station, int count)
 		pthread_cond_wait(&station->leaving, &station->mutex);
 	}
 
+	pthread_mutex_unlock(&station->mutex);
+	
 	// reset available seats and passengers on train for the next train
 	station->available_seats = 0;
 	station->passengers_on_train = 0;
