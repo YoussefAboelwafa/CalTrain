@@ -1,5 +1,5 @@
 rm final_result.out
-for i in {1..100}
+for i in {1..5000}
 do
   echo "Test(" $i ") ................................................. :-" >> final_result.out
   ./caltrain
